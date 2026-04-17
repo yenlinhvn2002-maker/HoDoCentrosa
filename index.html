@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jasmine - Hà Đô Centrosa</title>
+    <meta name="description" content="Trang thông tin dành cho cư dân tòa Jasmine, Hà Đô Centrosa. Cập nhật thông báo, quy định và tin tức nội bộ.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Icons (Phosphor Icons - clean and premium) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header id="header" class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-text">Jasmine</span>
+                <span class="logo-sub">Hà Đô Centrosa</span>
+            </a>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
+                <i class="ph ph-list"></i>
+            </button>
+
+            <!-- Navigation -->
+            <nav id="nav-menu" class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#gioi-thieu" class="nav-link">Giới Thiệu</a></li>
+                    <li><a href="#tin-tuc" class="nav-link">Tin Tức</a></li>
+                    <li><a href="#van-ban" class="nav-link">Văn Bản</a></li>
+                    <li><a href="#phap-luat" class="nav-link">Pháp Luật</a></li>
+                    <li><a href="#lien-he" class="nav-link btn-contact">Hỗ Trợ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('assets/hero.png');"></div>
+        <div class="container hero-content">
+            <div class="hero-text-box">
+                <h1 class="hero-title">Chung cư yêu thích của chúng tôi <br><span>Đến Hà Đô Centrosa, Tòa Jasmine</span></h1>
+                <p class="hero-slogan">"Tiếng nói chính trực của cư dân Jasmine, mong muốn minh bạch."</p>
+                <div class="hero-actions">
+                    <a href="#van-ban" class="btn btn-primary">Xem Văn Bản</a>
+                    <a href="#gioi-thieu" class="btn btn-outline">Tìm Hiểu Thêm</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GIỚI THIỆU SECTION -->
+    <section class="section about" id="gioi-thieu">
+        <div class="container section-container reverse">
+            <div class="section-image animate-on-scroll">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600" alt="Apartment Interior">
+                </div>
+            </div>
+            <div class="section-text animate-on-scroll">
+                <span class="section-subtitle">Về Tòa Jasmine</span>
+                <h2 class="section-title">Phong cách sống hiện đại và minh bạch</h2>
+                <p>Nằm tại trung tâm của Hà Đô Centrosa, tòa Jasmine không chỉ mang lại không gian sống đẳng cấp, mà còn là một cộng đồng gắn kết, đề cao sự minh bạch và chia sẻ.</p>
+                <p>Website này được ra đời để cập nhật kịp thời những thông báo, văn bản chính thống từ các cơ quan liên quan, mang đến tiếng nói chính trực dành cho mọi cư dân.</p>
+                <ul class="feature-list">
+                    <li><i class="ph ph-check-circle"></i> Môi trường sống thân thiện, văn minh</li>
+                    <li><i class="ph ph-check-circle"></i> Cập nhật thông tin nhanh chóng 24/7</li>
+                    <li><i class="ph ph-check-circle"></i> Minh bạch các quy định, văn bản luật</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- TIN TỨC SECTION -->
+    <section class="section news bg-light" id="tin-tuc">
+        <div class="container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-subtitle">Cập Nhật Mới</span>
+                <h2 class="section-title">Tin Tức Tòa Nhà</h2>
+            </div>
+            <div class="news-grid">
+                <article class="news-card animate-on-scroll delay-1">
+                    <div class="news-img">
+                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=400" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">16 Tháng 04, 2026</span>
+                        <h3 class="news-title">Lịch Bảo Trì Thang Máy Tháng 04/2026</h3>
+                        <p>Kế hoạch bảo trì định kỳ các thang máy tòa Jasmine nhằm đảm bảo an toàn tuyệt đối cho người sử dụng.</p>
+                        <a href="#" class="read-more">Đọc tiếp <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card animate-on-scroll delay-2">
+                    <div class="news-img">
+                        <img src="https://images.unsplash.com/photo-1574362848149-11496d93a7c7?auto=format&fit=crop&q=80&w=400" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">10 Tháng 04, 2026</span>
+                        <h3 class="news-title">Họp Cư Dân Quý II/2026</h3>
+                        <p>Thông báo mời toàn thể cư dân tham gia buổi họp thường kỳ nghe báo cáo hoạt động tài chính Quý 2.</p>
+                        <a href="#" class="read-more">Đọc tiếp <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="news-card animate-on-scroll delay-3">
+                    <div class="news-img">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=400" alt="News Image">
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">05 Tháng 04, 2026</span>
+                        <h3 class="news-title">Bầu Cử Ban Quản Trị Mới</h3>
+                        <p>Danh sách đề cử thành viên Ban quản trị nhiệm kỳ mới. Kính mong quý cư dân xem xét và bình chọn.</p>
+                        <a href="#" class="read-more">Đọc tiếp <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- VĂN BẢN SECTION -->
+    <section class="section documents" id="van-ban">
+        <div class="container style-container">
+            <div class="section-header text-center animate-on-scroll">
+                <span class="section-subtitle">Kho Dữ Liệu</span>
+                <h2 class="section-title">Hệ Thống Văn Bản</h2>
+                <p>Tra cứu hồ sơ, văn bản lưu trữ với các danh mục rõ ràng nhằm cung cấp thông tin minh bạch nhất dành cho cư dân.</p>
+            </div>
+
+            <div class="doc-grid">
+                <div class="doc-card animate-on-scroll">
+                    <div class="doc-icon"><i class="ph ph-briefcase"></i></div>
+                    <h3>Văn bản của Ban Quản Trị</h3>
+                    <p>Các nghị quyết, quyết định, thu chi tài chính do BQT phát hành.</p>
+                    <button class="doc-btn toggle-doc"><i class="ph ph-caret-down"></i> Mở Thư Mục</button>
+                    <ul class="doc-detail-list">
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Báo cáo thu chi Quý I/2026.pdf</a></li>
+                        <li><a href="#"><i class="ph ph-file-doc"></i> Quyết định thay camera sảnh.docx</a></li>
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Kế hoạch hội nghị chung cư.pdf</a></li>
+                    </ul>
+                </div>
+                <div class="doc-card animate-on-scroll delay-1">
+                    <div class="doc-icon"><i class="ph ph-buildings"></i></div>
+                    <h3>Văn bản của Chủ Đầu Tư</h3>
+                    <p>Các tài liệu liên quan đến công trình, bàn giao, pháp lý dự án.</p>
+                    <button class="doc-btn toggle-doc"><i class="ph ph-caret-down"></i> Mở Thư Mục</button>
+                    <ul class="doc-detail-list">
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Biên bản bàn giao kỹ thuật.pdf</a></li>
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Bản vẽ hoàn công tòa nhà.pdf</a></li>
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Giấy phép xây dựng (Bản sao).pdf</a></li>
+                    </ul>
+                </div>
+                <div class="doc-card animate-on-scroll delay-2">
+                    <div class="doc-icon"><i class="ph ph-clipboard-text"></i></div>
+                    <h3>Văn bản của Ban Quản Lý</h3>
+                    <p>Quy trình an ninh, xử lý sự cố, và thông báo vận hành hằng ngày.</p>
+                    <button class="doc-btn toggle-doc"><i class="ph ph-caret-down"></i> Mở Thư Mục</button>
+                    <ul class="doc-detail-list">
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Quy định nội quy khu dân cư.pdf</a></li>
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Thông báo lịch cắt nước cục bộ.pdf</a></li>
+                        <li><a href="#"><i class="ph ph-file-doc"></i> Quy trình đăng ký thi công.docx</a></li>
+                    </ul>
+                </div>
+                <div class="doc-card animate-on-scroll delay-3">
+                    <div class="doc-icon"><i class="ph ph-users"></i></div>
+                    <h3>Văn bản của Cư Dân</h3>
+                    <p>Kiến nghị, tổng hợp ý kiến góp ý của tập thể cư dân sống tại tòa nhà.</p>
+                    <button class="doc-btn toggle-doc"><i class="ph ph-caret-down"></i> Mở Thư Mục</button>
+                    <ul class="doc-detail-list">
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Đơn kiến nghị về bãi đỗ xe.pdf</a></li>
+                        <li><a href="#"><i class="ph ph-file-doc"></i> Mẫu phiếu lấy ý kiến cư dân.docx</a></li>
+                        <li><a href="#"><i class="ph ph-file-pdf"></i> Tổng hợp khảo sát dịch vụ 2025.pdf</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PHÁP LUẬT SECTION -->
+    <section class="section law bg-light" id="phap-luat">
+        <div class="container section-container">
+            <div class="section-text animate-on-scroll">
+                <span class="section-subtitle">Cơ Sở Pháp Lý</span>
+                <h2 class="section-title">Văn Bản Pháp Luật</h2>
+                <p>Nắm vững quy định pháp luật hiện hành liên quan đến vấn đề nhà ở, chung cư giúp cư dân chủ động bảo vệ quyền lợi hợp pháp.</p>
+                <div class="law-list">
+                    <div class="law-item-wrapper">
+                        <div class="law-item">
+                            <div class="law-icon"><i class="ph ph-scales"></i></div>
+                            <div class="law-info">
+                                <h4>Tài liệu: Luật Nhà Ở Đồng Bộ</h4>
+                                <span>Luật Nhà ở 2023 (Số 27/2023/QH15) có hiệu lực 01/01/2025</span>
+                            </div>
+                            <button class="btn-download" title="Tải xuống tài liệu"><i class="ph ph-download-simple"></i></button>
+                        </div>
+                        <ul class="law-docs">
+                            <li><a href="#"><i class="ph ph-file-pdf"></i> Toàn văn Luật Nhà Ở 2023.pdf</a></li>
+                            <li><a href="#"><i class="ph ph-file-pdf"></i> Nghị định quy định chi tiết Luật Nhà Ở.pdf</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="law-item-wrapper">
+                        <div class="law-item">
+                            <div class="law-icon"><i class="ph ph-file-text"></i></div>
+                            <div class="law-info">
+                                <h4>Thông Tư Bộ Xây Dựng</h4>
+                                <span>Cơ sở về quy chế quản lý, sử dụng nhà chung cư</span>
+                            </div>
+                            <button class="btn-download" title="Tải xuống tài liệu"><i class="ph ph-download-simple"></i></button>
+                        </div>
+                        <ul class="law-docs">
+                            <li><a href="#"><i class="ph ph-file-pdf"></i> Thông tư 05/2024/TT-BXD quản lý chung cư.pdf</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section-image animate-on-scroll">
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=600" alt="Law block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LIÊN HỆ / FORM SECTION -->
+    <section class="section contact" id="lien-he">
+        <div class="container">
+            <div class="contact-box animate-on-scroll">
+                <div class="contact-info">
+                    <span class="section-subtitle">Phản Hồi & Góp ý</span>
+                    <h2 class="section-title">Bạn Có Thắc Mắc Hoặc Ý Kiến?</h2>
+                    <p>Hãy để lại lời nhắn, Ban Quản Trị hoặc tổ dân cư sẽ ghi nhận và phản hồi sớm nhất.</p>
+                    
+                    <ul class="contact-details">
+                        <li><i class="ph ph-map-pin"></i> 200 Đường 3 tháng 2, Phường Hòa Hưng, TP.Hồ Chí Minh</li>
+                        <li><i class="ph ph-envelope-simple"></i> info@jasmine-hado.vn</li>
+                        <li><i class="ph ph-phone"></i> 028 1234 5678</li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Họ và Tên</label>
+                            <input type="text" id="name" name="name" placeholder="Ví dụ: Nguyễn Văn A" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apartment">Số Căn Hộ</label>
+                            <input type="text" id="apartment" name="apartment" placeholder="Ví dụ: J-12.03" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nội dung</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung góp ý hoặc thông tin cần liên hệ..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Gửi Thông Điệp</button>
+                    </form>
+                    <div id="formSuccess" class="form-success hidden">
+                        <i class="ph ph-check-circle-fill"></i>
+                        <p>Cảm ơn bạn! Thông điệp đã được ghi nhận.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Jasmine - Hà Đô Centrosa. Không gian sống đẳng cấp.</p>
+                <p class="credit">Thiết kế bởi Yến Linh</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
